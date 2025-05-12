@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
+import { submitToWaitlist } from '@/lib/formSubmit';
 
 const CTASection = () => {
   const [email, setEmail] = useState('');
@@ -16,22 +17,7 @@ const CTASection = () => {
     setIsSubmitting(true);
     
     try {
-      // Google Form submission URL
-      const formUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSf8DXG7FD1eGCT_3hpNY9XNeJbcRytEH9pHZi5AsInn-C73vw/formResponse';
-      
-      // Encode the email for the form
-      const formData = new URLSearchParams();
-      formData.append('entry.1128523808', email);
-      
-      // Send the form data
-      await fetch(formUrl, {
-        method: 'POST',
-        mode: 'no-cors', // Google Forms requires no-cors mode
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formData.toString(),
-      });
+      await submitToWaitlist(email);
       
       // Show success message
       toast({
@@ -82,16 +68,6 @@ const CTASection = () => {
             {isSubmitting ? "Joining..." : "Notify Me"}
           </Button>
         </form>
-
-        <div className="mt-4">
-          <Button
-            variant="link"
-            className="text-white underline"
-            onClick={handleButtonClick}
-          >
-            Or join directly via Google Forms
-          </Button>
-        </div>
         
         <p className="text-sm text-white/80 mt-4">
           By joining our waitlist, you'll be the first to know when HOAGPT launches and receive exclusive early-adopter benefits.

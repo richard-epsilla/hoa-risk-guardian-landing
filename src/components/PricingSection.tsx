@@ -56,6 +56,10 @@ const plans = [
 ];
 
 const PricingSection = () => {
+  const redirectToForm = () => {
+    window.open('https://forms.gle/hxeN6cejQbh916SA9', '_blank');
+  };
+
   return (
     <section id="pricing" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -92,6 +96,7 @@ const PricingSection = () => {
                   className={`w-full mb-6 ${
                     plan.isPopular ? 'bg-hoa-blue hover:bg-hoa-darkBlue' : 'bg-hoa-teal hover:bg-hoa-teal/90'
                   }`}
+                  onClick={redirectToForm}
                 >
                   {plan.name === "Enterprise" ? "Contact Sales" : "Join Beta Waitlist"}
                 </Button>
@@ -117,7 +122,7 @@ const PricingSection = () => {
           <p className="text-hoa-gray max-w-2xl mx-auto mb-6">
             Get free access to HOAGPT during our beta period and lock in special pricing when we launch.
           </p>
-          <Button size="lg" className="bg-hoa-blue hover:bg-hoa-darkBlue">
+          <Button size="lg" className="bg-hoa-blue hover:bg-hoa-darkBlue" onClick={redirectToForm}>
             Join the Beta Waitlist
           </Button>
         </div>
