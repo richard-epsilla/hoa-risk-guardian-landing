@@ -9,19 +9,52 @@ const HeroSection: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!email) return;
+    
     setIsSubmitting(true);
     
-    // In a real implementation, you would send this to your API
-    setTimeout(() => {
+    try {
+      // Google Form submission URL
+      const formUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSf8DXG7FD1eGCT_3hpNY9XNeJbcRytEH9pHZi5AsInn-C73vw/formResponse';
+      
+      // Encode the email for the form
+      const formData = new URLSearchParams();
+      formData.append('entry.1128523808', email);
+      
+      // Send the form data
+      await fetch(formUrl, {
+        method: 'POST',
+        mode: 'no-cors', // Google Forms requires no-cors mode
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: formData.toString(),
+      });
+      
+      // Show success message
       toast({
         title: "Success!",
-        description: "You've been added to our waitlist.",
+        description: "You've been added to our waitlist. We'll notify you when HOAGPT launches!",
       });
+      
+      // Clear the form
       setEmail('');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
+  };
+
+  const handleButtonClick = () => {
+    window.open('https://forms.gle/hxeN6cejQbh916SA9', '_blank');
   };
 
   return (
@@ -58,6 +91,16 @@ const HeroSection: React.FC = () => {
                 {isSubmitting ? "Joining..." : "Join Waitlist"}
               </Button>
             </form>
+            
+            <div className="mt-4">
+              <Button
+                variant="link"
+                className="text-hoa-blue p-0 underline"
+                onClick={handleButtonClick}
+              >
+                Or join directly via Google Forms
+              </Button>
+            </div>
           </div>
           
           <div className="lg:w-1/2 relative">
