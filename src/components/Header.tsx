@@ -25,6 +25,10 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  const redirectToForm = () => {
+    window.open('https://forms.gle/hxeN6cejQbh916SA9', '_blank');
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
@@ -47,7 +51,7 @@ const Header: React.FC = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button className="bg-hoa-blue hover:bg-hoa-darkBlue text-white">
+          <Button className="bg-hoa-blue hover:bg-hoa-darkBlue text-white" onClick={redirectToForm}>
             Join Beta Waitlist
           </Button>
         </div>
@@ -69,7 +73,7 @@ const Header: React.FC = () => {
                 <a href="#use-cases" className="text-hoa-darkGray hover:text-hoa-blue transition-colors text-lg">Use Cases</a>
                 <a href="#pricing" className="text-hoa-darkGray hover:text-hoa-blue transition-colors text-lg">Pricing</a>
                 <a href="#faq" className="text-hoa-darkGray hover:text-hoa-blue transition-colors text-lg">FAQ</a>
-                <Button className="bg-hoa-blue hover:bg-hoa-darkBlue text-white w-full">
+                <Button className="bg-hoa-blue hover:bg-hoa-darkBlue text-white w-full" onClick={redirectToForm}>
                   Join Beta Waitlist
                 </Button>
               </div>
