@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -48,7 +47,7 @@ const UseCasesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-hoa-darkBlue mb-4">Use Cases</h2>
           <p className="max-w-3xl mx-auto text-hoa-gray">
-            See how different stakeholders benefit from HOAGPT's AI-powered risk management.
+            See how different stakeholders benefit from BoardGuardian's AI-powered risk management.
           </p>
         </div>
         

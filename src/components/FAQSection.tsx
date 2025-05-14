@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Accordion,
@@ -9,11 +8,11 @@ import {
 
 const faqs = [
   {
-    question: "What is HOAGPT?",
-    answer: "HOAGPT is an AI-powered assistant designed specifically for HOA boards and property management companies. It analyzes emails, documents, and communications to detect potential insurance risks, compliance issues, and helps boards make informed decisions through automated summaries and notifications."
+    question: "What is BoardGuardian?",
+    answer: "BoardGuardian is an AI-powered assistant designed specifically for HOA boards and property management companies. It analyzes emails, documents, and communications to detect potential insurance risks, compliance issues, and helps boards make informed decisions through automated summaries and notifications."
   },
   {
-    question: "How do I integrate HOAGPT with my existing email system?",
+    question: "How do I integrate BoardGuardian with my existing email system?",
     answer: "Integration is simple! You'll receive a unique email address to forward or CC your HOA-related emails to. You can also directly upload documents through our secure web portal. For more advanced users, we offer API access and webhooks to connect with your existing systems."
   },
   {
@@ -22,15 +21,15 @@ const faqs = [
   },
   {
     question: "Is my HOA data secure?",
-    answer: "Absolutely. HOAGPT implements bank-level security with SOC 2 compliant infrastructure. All data is encrypted both in transit and at rest. We maintain strict access controls, and you can define user permissions for your team members. We never share your data with third parties."
+    answer: "Absolutely. BoardGuardian implements bank-level security with SOC 2 compliant infrastructure. All data is encrypted both in transit and at rest. We maintain strict access controls, and you can define user permissions for your team members. We never share your data with third parties."
   },
   {
-    question: "Can HOAGPT replace our property manager or attorney?",
-    answer: "HOAGPT is designed to complement, not replace, your existing team. It helps identify potential issues earlier, makes your property manager and attorney more efficient by providing them with concise summaries, and creates an audit trail of communications about risks and compliance."
+    question: "Can BoardGuardian replace our property manager or attorney?",
+    answer: "BoardGuardian is designed to complement, not replace, your existing team. It helps identify potential issues earlier, makes your property manager and attorney more efficient by providing them with concise summaries, and creates an audit trail of communications about risks and compliance."
   },
   {
-    question: "What types of documents can HOAGPT analyze?",
-    answer: "HOAGPT can analyze virtually any text-based document relevant to HOA operations, including CC&Rs, bylaws, meeting minutes, insurance policies, vendor contracts, financial statements, and resident communications. We support PDF, Word, Excel, plain text, and most common email formats."
+    question: "What types of documents can BoardGuardian analyze?",
+    answer: "BoardGuardian can analyze virtually any text-based document relevant to HOA operations, including CC&Rs, bylaws, meeting minutes, insurance policies, vendor contracts, financial statements, and resident communications. We support PDF, Word, Excel, plain text, and most common email formats."
   },
 ];
 
@@ -41,7 +40,7 @@ const FAQSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-hoa-darkBlue mb-4">Frequently Asked Questions</h2>
           <p className="max-w-3xl mx-auto text-hoa-gray">
-            Find answers to common questions about HOAGPT.
+            Find answers to common questions about BoardGuardian.
           </p>
         </div>
         

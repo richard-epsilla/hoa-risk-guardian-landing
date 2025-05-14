@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -22,7 +21,7 @@ const CTASection = () => {
       // Show success message
       toast({
         title: "Success!",
-        description: "You've been added to our waitlist. We'll notify you when HOAGPT launches!",
+        description: "You've been added to our waitlist. We'll notify you when BoardGuardian launches!",
       });
       
       // Clear the form
@@ -48,7 +47,7 @@ const CTASection = () => {
       <div className="container mx-auto px-4 md:px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to protect your community?</h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Join the HOAGPT beta waitlist today. Limited spots available—get early access and special pricing!
+          Join the BoardGuardian beta waitlist today. Limited spots available—get early access and special pricing!
         </p>
         
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-8">
@@ -70,7 +69,7 @@ const CTASection = () => {
         </form>
         
         <p className="text-sm text-white/80 mt-4">
-          By joining our waitlist, you'll be the first to know when HOAGPT launches and receive exclusive early-adopter benefits.
+          By joining our waitlist, you'll be the first to know when BoardGuardian launches and receive exclusive early-adopter benefits.
         </p>
       </div>
     </section>

@@ -1,15 +1,14 @@
-
 import React from 'react';
 
 const testimonials = [
   {
-    quote: "HOAGPT flagged our expiring policy 6 weeks early—saved us $10K in emergency insurance.",
+    quote: "BoardGuardian flagged our expiring policy 6 weeks early—saved us $10K in emergency insurance.",
     author: "Jane L.",
     title: "HOA Board President",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80"
   },
   {
-    quote: "As a property manager overseeing 12 communities, HOAGPT is like having an extra team member focused only on risk.",
+    quote: "As a property manager overseeing 12 communities, BoardGuardian is like having an extra team member focused only on risk.",
     author: "Michael R.",
     title: "Property Management Director",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=256&q=80"
@@ -37,7 +36,7 @@ const TestimonialsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-hoa-darkBlue mb-4">What Our Early Users Say</h2>
           <p className="max-w-3xl mx-auto text-hoa-gray">
-            Communities using HOAGPT are already seeing real benefits in risk management and compliance.
+            Communities using BoardGuardian are already seeing real benefits in risk management and compliance.
           </p>
         </div>
         
@@ -70,7 +69,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
         
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <h3 className="text-center text-hoa-darkBlue font-semibold mb-10">Trusted by pilot communities</h3>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
             {logos.map((logo, index) => (
@@ -79,7 +78,7 @@ const TestimonialsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

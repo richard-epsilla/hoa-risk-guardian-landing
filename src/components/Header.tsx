@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -36,7 +35,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <h1 className="text-2xl font-bold text-hoa-darkBlue">
-            <span className="text-hoa-blue">HOA</span>GPT
+            <span className="text-hoa-blue">Board</span>Guardian
           </h1>
         </div>
 

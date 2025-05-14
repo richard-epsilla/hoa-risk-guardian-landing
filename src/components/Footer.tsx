@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-hoa-blue">HOA</span>GPT
+              <span className="text-hoa-blue">Board</span>Guardian
             </h3>
             <p className="text-white/80 mb-4">
               AI-powered risk and compliance assistant for HOA boards.
@@ -61,7 +60,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-white/10 text-center text-sm text-white/60">
-          <p>&copy; {currentYear} HOAGPT. All rights reserved.</p>
+          <p>&copy; {currentYear} BoardGuardian. All rights reserved.</p>
         </div>
       </div>
     </footer>

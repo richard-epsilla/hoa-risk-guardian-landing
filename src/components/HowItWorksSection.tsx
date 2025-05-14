@@ -1,11 +1,10 @@
-
 import React from 'react';
 
 const steps = [
   {
     number: "01",
     title: "Connect & Forward",
-    description: "Forward HOA emails to your unique HOAGPT address or upload docs via our dashboard",
+    description: "Forward HOA emails to your unique BoardGuardian address or upload docs via our dashboard",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-white">
         <path strokeLinecap="round" strokeLinejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
@@ -49,7 +48,7 @@ const HowItWorksSection = () => {
     <section id="how-it-works" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-hoa-darkBlue mb-4">How HOAGPT Works</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-hoa-darkBlue mb-4">How BoardGuardian Works</h2>
           <p className="max-w-3xl mx-auto text-hoa-gray">
             Our AI-powered platform simplifies risk management with a straightforward 4-step process.
           </p>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const features = [
@@ -47,7 +46,7 @@ const FeaturesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-hoa-darkBlue mb-4">Key Features</h2>
           <p className="max-w-3xl mx-auto text-hoa-gray">
-            HOAGPT combines advanced AI technology with deep understanding of HOA needs to provide powerful risk management tools.
+            BoardGuardian combines advanced AI technology with deep understanding of HOA needs to provide powerful risk management tools.
           </p>
         </div>
         

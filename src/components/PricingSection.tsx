@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
@@ -10,7 +9,7 @@ const plans = [
     period: "per month per community",
     description: "Perfect for small HOAs and communities just getting started.",
     features: [
-      "Up to 10 users",
+      "Up to 2 users",
       "100 emails per month",
       "20 document uploads",
       "Basic risk detection",
@@ -25,9 +24,9 @@ const plans = [
     period: "per month",
     description: "Ideal for established HOAs needing comprehensive risk management.",
     features: [
-      "Up to 50 users",
-      "Unlimited emails",
-      "Unlimited uploads",
+      "Up to 10 users",
+      "500 emails",
+      "500 uploads",
       "Advanced risk detection",
       "Custom risk thresholds",
       "API access",
@@ -120,7 +119,7 @@ const PricingSection = () => {
           </div>
           <h3 className="text-2xl font-bold text-hoa-darkBlue mb-4">Join the Beta – Free for Early Adopters</h3>
           <p className="text-hoa-gray max-w-2xl mx-auto mb-6">
-            Get free access to HOAGPT during our beta period and lock in special pricing when we launch.
+            Get free access to BoardGuardian during our beta period and lock in special pricing when we launch.
           </p>
           <Button size="lg" className="bg-hoa-blue hover:bg-hoa-darkBlue" onClick={redirectToForm}>
             Join the Beta Waitlist

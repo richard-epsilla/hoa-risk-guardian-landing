@@ -1,6 +1,5 @@
-
 /**
- * Utility function to submit an email to the HOAGPT waitlist via Google Forms
+ * Utility function to submit an email to the BoardGuardian waitlist via Google Forms
  */
 export async function submitToWaitlist(email: string): Promise<void> {
   // Google Form submission URL
